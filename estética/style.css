@@ -2,9 +2,9 @@
 
 :root {
   --color-white: #f3f3f3;
-  --color-darkblue: #1b1b32;
-  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
-  --color-green: #37af65;
+  --color-salmon: #da6541;
+  --color-amarillo: rgba(250, 246, 2, 0.445);
+  --color-green: #37af658a;
 }
 
 *,
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik Beastly', cursiva;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -22,7 +22,6 @@ body {
   margin: 0;
 }
 
-/* mobile friendly alternative to using background-attachment: fixed */
 body::before {
   content: '';
   position: fixed;
@@ -31,13 +30,13 @@ body::before {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: var(--color-darkblue);
+  background: var(--color-salmon);
   background-image: linear-gradient(
       115deg,
-      rgba(58, 58, 158, 0.8),
-      rgba(136, 136, 206, 0.7)
+      rgba(0, 0, 0, 0.473),
+      rgba(255, 255, 255, 0.431)
     ),
-    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    url(/estética/mascotas.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -120,7 +119,7 @@ button {
 /* form */
 
 form {
-  background: var(--color-darkblue-alpha);
+  background: var(--color-amarillo);
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
 }
@@ -150,9 +149,9 @@ form {
 }
 
 .form-control:focus {
-  border-color: #80bdff;
+  border-color: #ffbd80;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(12, 133, 52, 0.25);
 }
 
 .input-radio,
